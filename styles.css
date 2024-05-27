@@ -1,0 +1,162 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f4f4f4;
+}
+
+.container {
+  display: flex;
+  align-items: flex-start;
+}
+
+.interface {
+  position: relative;
+  text-align: center;
+}
+
+.button {
+  width: 100px;
+  height: 50px;
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.redagent, .blueagent, .bystander {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  filter: brightness(0.8);
+}
+
+.red {
+  /* background: radial-gradient(circle, rgba(190,20,20,1) 54%, rgba(36,2,0,1) 100%); */
+  background: rgba(190,20,20,1) 54%;
+}
+
+
+.redagent {
+  background-image: url(images/redagent.jpeg);
+}
+
+.blue {
+  /* background: radial-gradient(circle, rgba(35,35,227,1) 45%, rgba(2,0,36,1) 100%); */
+  background: rgba(35,35,227,1) 45%;
+}
+
+.blueagent {
+  background-image: url(images/blueagent.jpeg);
+}
+
+.grey {
+  background-color: rgb(120, 115, 115);
+}
+
+.tan {
+  background-color: tan;
+}
+
+.bystander {
+  background-image: url(images/bystander.jpeg);
+}
+
+.black {
+  background-color: black;
+}
+
+.grid {
+  display: inline-block;
+  margin-top: 20px;
+  position: relative;
+  z-index: 3;
+}
+
+.row {
+  display: flex;
+}
+
+.grid-button {
+  width: 100px;
+  height: 50px;
+  border-radius: 10px;
+  margin: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 0;
+  display: inline-block;
+}
+
+.refreshcheck-row {
+  position: relative;
+  top: 75%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  text-align: center;
+}
+
+.master-color {
+  display: inline-block;
+  
+  margin-top: 10px;
+}
+
+.master-color span {
+  display: inline-block;
+  width: 120px; 
+  height: 20px; 
+  border-radius: 3px;
+}
+
+.map-container {
+  margin-left: 20px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  padding: 10px;
+  background-color: #fff;
+  overflow-y: auto;
+  max-height: 500px; 
+  font-size: 0;
+}
+
+.map-row {
+  display: flex;
+}
+
+.map-cell {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1px;
+  border: 1px solid #000;
+  border-radius: 3px;
+}
+
+.map-cell.red {
+  background-color: red;
+}
+
+.map-cell.blue {
+  background-color: blue;
+}
+
+.map-cell.tan {
+  background-color: tan;
+}
+
+.map-cell.black {
+  background-color: black;
+}

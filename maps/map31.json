@@ -1,0 +1,10 @@
+{
+    "master": "blue",
+    "values": [
+      ["blue", "red", "red", "red", "tan"],
+      ["blue", "red", "tan", "tan", "blue"],
+      ["tan", "blue", "blue", "tan", "red"],
+      ["red", "tan", "blue", "black", "blue"],
+      ["blue", "red", "tan", "red", "blue"]
+    ]
+  }
