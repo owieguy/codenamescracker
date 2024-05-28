@@ -203,5 +203,6 @@ body {
     margin-top: 20px; /* Add space between grid and map container */
     text-align: center; /* Center the map container content */
     width: 120px; /* Adjust map container width as needed */
+    height: 220px;
   }
 }
