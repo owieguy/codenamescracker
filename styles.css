@@ -11,11 +11,14 @@ body {
 .container {
   display: flex;
   align-items: flex-start;
+  flex-direction: column; /* Default to column for mobile */
+  width: 100%;
+  padding: 10px;
 }
 
 .interface {
-  position: relative;
   text-align: center;
+  width: 100%;
 }
 
 .button {
@@ -41,17 +44,14 @@ body {
 }
 
 .red {
-  /* background: radial-gradient(circle, rgba(190,20,20,1) 54%, rgba(36,2,0,1) 100%); */
   background: rgba(190,20,20,1) 54%;
 }
-
 
 .redagent {
   background-image: url(images/redagent.jpeg);
 }
 
 .blue {
-  /* background: radial-gradient(circle, rgba(35,35,227,1) 45%, rgba(2,0,36,1) 100%); */
   background: rgba(35,35,227,1) 45%;
 }
 
@@ -98,17 +98,13 @@ body {
 }
 
 .refreshcheck-row {
-  position: relative;
-  top: 75%;
-  left: 50%;
-  transform: translateX(-50%);
+  margin-top: 20px;
   z-index: 1;
   text-align: center;
 }
 
 .master-color {
   display: inline-block;
-  
   margin-top: 10px;
 }
 
@@ -120,14 +116,14 @@ body {
 }
 
 .map-container {
-  margin-left: 20px;
+  margin-top: 20px;
   display: inline-block;
   border: 1px solid #ccc;
   padding: 10px;
   background-color: #fff;
   overflow-y: auto;
   max-height: 500px; 
-  font-size: 0;
+  width: 100%; /* Full width on mobile */
 }
 
 .map-row {
@@ -159,4 +155,20 @@ body {
 
 .map-cell.black {
   background-color: black;
+}
+
+/* Media queries for larger screens */
+@media (min-width: 600px) {
+  .container {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .map-container {
+    margin-left: 20px;
+    width: auto; /* Original width */
+    max-height: 500px;
+    font-size: 0;
+
+  }
 }
