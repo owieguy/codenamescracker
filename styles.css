@@ -186,6 +186,14 @@ body {
 
 /* Media queries for phone screens */
 @media (max-width: 599px) {
+  .grid {
+    width: calc(100% - 40px); /* Leave space on left and right */
+    margin: 0 auto; /* Center the grid */
+  }
+
+  .grid-button {
+    width: calc((100% - 50px) / 5); /* Adjust button width to fit screen */
+  }
   .container {
     flex-direction: column; /* Stack grid and map container vertically */
     align-items: center; /* Center items horizontally */
