@@ -68,7 +68,7 @@ document.addEventListener("DOMContentLoaded", function() {
           if (masterMatch) {
             const mapDiv = document.createElement('div');
             mapDiv.classList.add('map-match');
-            mapDiv.innerHTML = `<div>Map ${index + 1} (Rotation: ${rotation * 90}°)</div>`;
+            mapDiv.innerHTML = `<div>Map ${index + 1}</div>`;
             mapContainer.appendChild(mapDiv);
             map.print(rotation);
             break;
