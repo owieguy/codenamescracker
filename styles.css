@@ -110,7 +110,7 @@ body {
 
 .master-color span {
   display: inline-block;
-  width: 120px; 
+  width: 108px; 
   height: 20px; 
   border-radius: 3px;
 }
@@ -124,7 +124,6 @@ body {
   overflow-y: auto;
   max-height: 500px; 
   width: 80%; /* Full width on mobile */
-  font-size: 0;
 }
 
 .map-row {
