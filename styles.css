@@ -170,21 +170,30 @@ body {
     width: auto; /* Original width */
   }
 
+  .grid {
+    margin-right: 20px; /* Add space between grid and map container */
+    flex-grow: 1; /* Allow the grid to grow and fill remaining space */
+  }
+
   .map-container {
-    margin-left: 20px;
-    width: auto; /* Original width */
+    margin-top: 20px; /* Add space between grid and map container */
+    width: 120px; /* Adjust map container width as needed */
     max-height: 500px;
   }
 }
 
+
+
 /* Media queries for phone screens */
 @media (max-width: 599px) {
-  .grid {
-    width: calc(100% - 40px); /* Leave space on left and right */
-    margin: 0 auto; /* Center the grid */
+  .container {
+    flex-direction: column; /* Stack grid and map container vertically */
+    align-items: center; /* Center items horizontally */
   }
 
-  .grid-button {
-    width: calc((100% - 50px) / 5); /* Adjust button width to fit screen */
+  .map-container {
+    margin-top: 20px; /* Add space between grid and map container */
+    text-align: center; /* Center the map container content */
+    width: 120px; /* Adjust map container width as needed */
   }
 }
