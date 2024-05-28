@@ -123,7 +123,8 @@ body {
   background-color: #fff;
   overflow-y: auto;
   max-height: 500px; 
-  width: 100%; /* Full width on mobile */
+  width: 80%; /* Full width on mobile */
+  font-size: 0;
 }
 
 .map-row {
@@ -168,7 +169,5 @@ body {
     margin-left: 20px;
     width: auto; /* Original width */
     max-height: 500px;
-    font-size: 0;
-
   }
 }
