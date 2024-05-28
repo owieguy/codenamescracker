@@ -123,7 +123,7 @@ body {
   background-color: #fff;
   overflow-y: auto;
   max-height: 500px; 
-  width: 80%; /* Full width on mobile */
+  width: 50%; /* Full width on mobile */
 }
 
 .map-row {
