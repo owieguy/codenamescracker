@@ -19,6 +19,7 @@ body {
 .interface {
   text-align: center;
   width: 100%;
+  margin: 0 auto; /* Center the grid container */
 }
 
 .button {
@@ -110,7 +111,7 @@ body {
 
 .master-color span {
   display: inline-block;
-  width: 108px; 
+  width: 120px; 
   height: 20px; 
   border-radius: 3px;
 }
@@ -123,7 +124,8 @@ body {
   background-color: #fff;
   overflow-y: auto;
   max-height: 500px; 
-  width: 50%; /* Full width on mobile */
+  width: 100%; /* Full width on mobile */
+  text-align: center; /* Center the text in map container */
 }
 
 .map-row {
@@ -164,9 +166,21 @@ body {
     align-items: flex-start;
   }
 
+  .interface {
+    width: auto; /* Original width */
+  }
+
   .map-container {
     margin-left: 20px;
     width: auto; /* Original width */
     max-height: 500px;
+  }
+}
+
+/* Media queries for phone screens */
+@media (max-width: 599px) {
+  .grid {
+    width: calc(100% - 40px); /* Leave space on left and right */
+    margin: 0 auto; /* Center the grid */
   }
 }
