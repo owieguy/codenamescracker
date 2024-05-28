@@ -47,7 +47,6 @@ export const map = {
         // Modified master color display
         const masterColorDiv = document.createElement('div');
         masterColorDiv.classList.add('master-color');
-        masterColorDiv.textContent = 'Master Color:';
         const masterColorSpan = document.createElement('span');
         masterColorSpan.style.backgroundColor = this.master;
         masterColorDiv.appendChild(masterColorSpan);
@@ -64,7 +63,6 @@ export const map = {
             row.forEach(cell => {
                 const cellDiv = document.createElement('div');
                 cellDiv.classList.add('map-cell', cell);
-                cellDiv.textContent = cell;
                 rowDiv.appendChild(cellDiv);
             });
             mapDiv.appendChild(rowDiv);
